@@ -460,7 +460,7 @@ button:focus {
   .o_blog_item .blog_text h4 {
     color: #726e6e;
     font-size: 18px;
-    margin: 20px 0 10px 0;
+    margin: 10px 0 5px 0;
     transition: all 300ms linear 0s;
     font-weight: 400;
   }
@@ -468,7 +468,7 @@ button:focus {
       color: #faba00; } */
   .o_blog_item .blog_text p {
     /* max-width: 320px; */
-    margin-bottom: 18px;
+    margin-bottom: 30px;
     color: #181818;
     font-weight: 400;
   }
@@ -481,7 +481,7 @@ button:focus {
 ============================================================================================ */
 /* Causes Area css
 ============================================================================================ */
-.causes_slider .owl-dots {
+/* .causes_slider .owl-dots {
   text-align: center;
   margin-top: 80px; }
   .causes_slider .owl-dots .owl-dot {
@@ -553,7 +553,7 @@ button:focus {
       border-color: #eeeeee;
       background: #fff;
       font-size: 14px;
-      color: #222222; }
+      color: #222222; } */
 
 /* End Causes Area css
 ============================================================================================ */
@@ -2896,7 +2896,7 @@ h6 {
 .footer_area {
   background: #222222; }
 
-.f_title {
+/* .f_title {
   margin-bottom: 35px; }
   .f_title h3 {
     color: #fff;
@@ -2989,7 +2989,7 @@ h6 {
   text-align: center;
   margin-top: 60px; }
   .copy_right_text p a {
-    color: #faba00; }
+    color: #faba00; } */
 
 /* End Footer Area css
 ============================================================================================ */
@@ -3066,4 +3066,13 @@ a:hover{
 }
 .padding-137{
   padding:137.5px 0;
+}
+
+.footer-text-box{
+  color: #fff;
+  font-size: 16px;
+  line-height:150%;
+}
+.footer-text-box>p{
+  letter-spacing: 0.5px;
 }
