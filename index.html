@@ -175,23 +175,23 @@
 		<script>
 			    $(function(){
         $('.furniture_item-1').hover(function(){
-            $(".Bestseller-item-1").css("display","block");
-			$(".Bestseller-item-2").css("display","none");
-			$(".Bestseller-item-3").css("display","none");
+            $(".Bestseller-item-1").fadeIn(400);
+			$(".Bestseller-item-2").fadeOut(400);
+			$(".Bestseller-item-3").fadeOut(400);
         });
 	});
 	$(function(){
         $('.furniture_item-2').hover(function(){
-            $('.Bestseller-item-2').css("display","block");
-			$(".Bestseller-item-1").css("display","none");
-			$(".Bestseller-item-3").css("display","none");
+            $('.Bestseller-item-2').fadeIn(400);
+			$(".Bestseller-item-1").fadeOut(400);
+			$(".Bestseller-item-3").fadeOut(400);
         });
 	});
 	$(function(){
         $('.furniture_item-3').hover(function(){
-            $('.Bestseller-item-3').css("display","block");
-			$(".Bestseller-item-2").css("display","none");
-			$(".Bestseller-item-1").css("display","none");
+            $('.Bestseller-item-3').fadeIn(400);;
+			$(".Bestseller-item-2").fadeOut(400);
+			$(".Bestseller-item-1").fadeOut(400);
         });
     });
 		</script>
