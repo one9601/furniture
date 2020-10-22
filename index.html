@@ -19,7 +19,9 @@
         <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<!-- Aos -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <!--================Header Menu Area =================-->
@@ -75,11 +77,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8">
-							<div class="banner_content">
-								<h2>10초에 1개씩 판매되는 <br />국민가구 Market.C</h2>
-								<p>Market.C 에서 예쁜 가구 구매하고<br>
+							<div class="banner_content" data-aos-anchor-placement="top-bottom">
+								<h2 data-aos="fade-up" data-aos-duration="1000">10초에 1개씩 판매되는 <br />국민가구 Market.C</h2>
+								<p data-aos="fade-up" data-aos-duration="2000">Market.C 에서 예쁜 가구 구매하고<br>
 									고급스러운 집안 분위기를 만들어보세요</p>
-								<div class="line"></div>
+								<div class="line" ></div>
 								<a class="banner_btn" href="#Bestseller-area">Get Started</a>
 							</div>
 						</div>
@@ -132,7 +134,7 @@
         		</div>
         		<div class="furniture_inner row">
         			<div class="col-lg-4">
-        				<div class="furniture_item furniture_item-1">
+        				<div class="furniture_item furniture_item-1" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
 							<img class="img-fluid" src="img/furniture/bestseller-img-1.png" alt="소파이미지">
 							<div class="Bestseller-hover-first Bestseller-overlay Bestseller-item-1">
 								<div class="Bestseller-textbox">
@@ -144,7 +146,7 @@
         				</div>
         			</div>
         			<div class="col-lg-4">
-        				<div class="furniture_item furniture_item-2">
+        				<div class="furniture_item furniture_item-2" data-aos="fade-up" data-aos-duration="2000">
 							<img class="img-fluid" src="img/furniture/bestseller-img-2.png" alt="침대 이미지">
 							<div class="Bestseller-hover Bestseller-overlay Bestseller-item-2">
 								<div class="Bestseller-textbox">
@@ -156,7 +158,7 @@
         				</div>
         			</div>
         			<div class="col-lg-4">
-        				<div class="furniture_item furniture_item-3">
+        				<div class="furniture_item furniture_item-3" data-aos="fade-up" data-aos-duration="3000">
 							<img class="img-fluid" src="img/furniture/bestseller-img-3.png" alt="수납장 이미지">
 							<div class="Bestseller-hover Bestseller-overlay Bestseller-item-3">
 								<div class="Bestseller-textbox">
@@ -303,7 +305,7 @@
         			<h2>Market.C Choice</h2>
         			<p>Here are some of the furniture that Market.C recommends</p>
         		</div>
-        		<div class="blog_inner row">
+        		<div class="blog_inner row" data-aos="fade-up" data-aos-duration="2000">
         			<div class="col-lg-4">
         				<div class="o_blog_item">
         					<div class="blog_img">
@@ -350,7 +352,7 @@
         				</div>
         			</div>
 				</div>
-				<div class="blog_inner row">
+				<div class="blog_inner row" data-aos="fade-up" data-aos-duration="3000">
         			<div class="col-lg-4">
         				<div class="o_blog_item">
         					<div class="blog_img">
@@ -517,7 +519,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
         <script src="js/gmaps.min.js"></script>
 		<script src="js/theme.js"></script>
-		
-		
+		<!-- Aos -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		  </script>
     </body>
 </html>
