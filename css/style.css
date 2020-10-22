@@ -307,7 +307,9 @@ button:focus {
       .home_banner_area .banner_inner .banner_content .banner_map_img {
         text-align: right; }
       .home_banner_area .banner_inner .banner_content .banner_btn {
-        margin-right: 0px; }
+        margin-right: 0px;
+        position: relative;
+      }
   .home_banner_area .home_right_box {
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
@@ -3034,6 +3036,31 @@ p{
   height: 100px;
   background-color: #fff;
   margin-left: 75px;
+  position: relative;
+}
+.line:after{
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  left: 50%;
+  top: 15px;
+  margin-left: -5.5px;
+  border-radius: 50%;
+  animation: linename 2s infinite;
+  opacity: 1;
+}
+@keyframes linename{
+  0%{
+    top: 50px;
+    opacity: 1;
+  }
+  100%{
+    top: 100px;
+    opacity:0.1;
+  }
+
 }
 a:hover{
   color: inherit;
