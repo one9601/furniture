@@ -470,11 +470,12 @@ button:focus {
     transition: all 300ms linear 0s;
     font-weight: 400;
     font-family: 'Nanum Gothic', sans-serif;
+    max-width: 200px;
   }
     /* .o_blog_item .blog_text h4:hover {
       color: #faba00; } */
   .o_blog_item .blog_text p {
-    /* max-width: 320px; */
+    max-width: 100px;
     margin-bottom: 30px;
     color: #181818;
     font-weight: 400;
@@ -2694,7 +2695,9 @@ h6 {
   margin-bottom: -30px; }
 
 .furniture_item {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  cursor: pointer;
+}
   .furniture_item img {
     border-radius: 5px; }
   .furniture_item h4 {
@@ -3112,6 +3115,10 @@ a:hover{
 }
 
 /* ===Bestseller End=== */
+
+.blog_img, .blog_text>h4 , .blog_text>p{
+  cursor: pointer;
+}
 
 /* ===Footer start=== */
 .footer-text-box{
