@@ -323,7 +323,6 @@ button:focus {
       max-width: 50%;
       text-align: center;
       line-height: 150px; */
-      line-height: 50px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       transition: all 300ms linear 0s; }
       .home_banner_area .home_right_box .home_item i {
@@ -334,10 +333,6 @@ button:focus {
           margin-left: 0px; }
       .home_banner_area .home_right_box .home_item:nth-child(odd) {
         border-right: 1px solid rgba(255, 255, 255, 0.1); }
-      .home_banner_area .home_right_box .home_item:nth-child(5) {
-        border-bottom: 0px; }
-      .home_banner_area .home_right_box .home_item:last-child {
-        border-bottom: 0px; }
       .home_banner_area .home_right_box .home_item:hover {
         background: #b5a08a; }
 
@@ -3014,6 +3009,11 @@ h6 {
 
 /* !!ME!! */
 
+p{
+  margin: 0;
+}
+
+/* ===Header start=== */
 .header{
   height: 100px;
   background: #fff;
@@ -3021,6 +3021,11 @@ h6 {
 .logo_img img{
   width:200px;
 }
+
+/* ===Header End=== */
+
+/* ===Benner Start=== */
+
 .line{
   width:1px;
   height: 100px;
@@ -3030,9 +3035,32 @@ h6 {
 a:hover{
   color: inherit;
 }
-.furniture_item:hover *{
-  transition: all 0.4s ease-in-out;
+.home_right_last>.home_item{
+  border-bottom: 0px !important;
 }
+.home_item{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  height: 150px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.home_item p{
+  font-size: 16px;
+  color:#fff;
+  display: none;
+  transition: 0.4s;
+}
+.home_item:hover p{
+  display: block;
+}
+/* ===Benner End=== */
+
+/* === Bestseller start=== */
+
+
 .Bestseller-hover{
   position: absolute;
   top: 0;
@@ -3078,10 +3106,14 @@ a:hover{
 .Bestseller-textbox>p:last-child{
   font-weight: 900;
 }
+
 .padding-137{
   padding:137.5px 0;
 }
 
+/* ===Bestseller End=== */
+
+/* ===Footer start=== */
 .footer-text-box{
   color: #ccc;
   font-size: 14px;
@@ -3094,3 +3126,5 @@ a:hover{
 .footer-padding{
   padding: 20px 0;
 }
+
+/* ====Footer End===== */
