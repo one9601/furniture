@@ -3156,3 +3156,13 @@ a:hover{
 }
 
 /* ====Footer End===== */
+
+@media(max-width:991px){
+  .nav{
+    background: #fff;
+  }
+  .footer-logo{
+    padding-bottom: 20px;
+  }
+
+}
