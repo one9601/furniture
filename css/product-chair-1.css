@@ -202,13 +202,18 @@ p{
 }
 .select{
   margin-left: 50px;
+  font-size: 12px;
 }
-#select , #select-2{
-  width:100%;
+#select{
+  width:74%;
   padding: 3px 0;
 }
 .select>div{
   padding: 7px 0;
+  display: flex;
+}
+.select>div>p{
+  margin-right: 50px;
 }
 
 /* ===furnitur-buy=== */
