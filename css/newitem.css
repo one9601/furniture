@@ -269,6 +269,21 @@ p{
 
 
 @media(max-width:991px){
+  .navbar .container{
+    padding: 0 !important;
+  }
+  .new-item-area{
+    padding: 20px 0;
+  }
+  .newitem-list ,.newitem-first{
+    width: 50%;
+  }
+  .newitem-first{
+    text-align: center;
+  }
+  .item-img{
+    width: 100%;
+  }
   .header_area .navbar .nav .nav-item{
     background: #fff;
     border-bottom: 1px solid #ccc;
@@ -291,4 +306,5 @@ p{
   .newitem-list{
     margin-bottom: 20px;
   }
+  
 }
