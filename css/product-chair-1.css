@@ -202,10 +202,14 @@ p{
 }
 .select{
   margin-left: 50px;
-  font-size: 12px;
+  font-size: 16px;
 }
 #select{
   width:74%;
+  padding: 3px 0;
+}
+#select-2{
+  width: 74%;
   padding: 3px 0;
 }
 .select>div{
@@ -215,6 +219,39 @@ p{
 .select>div>p{
   margin-right: 50px;
 }
+
+#count{
+  width: 30px;
+}
+#total_count_view{
+  font-weight: bold;
+  border: none;
+  width: 72px;
+}
+.count-price{
+  margin-left: 50px;
+  font-size: 16px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 7px 0;
+}
+.buy-button{
+  margin: 7px 0 0 0;
+  float: right;
+  text-align: center;
+}
+.buy-button>button{
+  border: 1px solid  #b5a08a;
+  padding: 7px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.buy-button>button:hover{
+  background: #b5a08a;
+  color: #fff;
+}
+
 
 /* ===furnitur-buy=== */
 
@@ -236,3 +273,28 @@ p{
   }
 
   /* ===footer=== */
+
+
+
+
+  .modal{
+    display: none; /*Hidden by defailt*/
+    position: fixed; /*Stay in place*/
+    z-index: 99;/*Sit on top*/
+    left: 0;
+    top: 0;
+    width: 100%; /*Full width*/
+    height: 100%; /*Full height*/
+    overflow: auto; /*Enable scroll if needed*/
+    background-color: rgb(0, 0, 0); /*Fallback color*/
+    background-color: rgba(0, 0, 0, 0.4); /*Black w/ opacity*/
+}
+/*Modal Content /Box */
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto; /*15% from the top and centered*/
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /*Could be more or less, depending on screen size*/
+}
+  /* modal */
