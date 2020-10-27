@@ -173,7 +173,12 @@ p{
 /* ====header==== */
 
 .furniture-buy{
-  padding-top: 100px;
+  padding: 100px 0 20px 0;
+}
+.furniture-buy-article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .title{
   font-size: 15px;
@@ -240,8 +245,7 @@ p{
 }
 .buy-button{
   margin: 7px 0 0 0;
-  float: right;
-  text-align: center;
+  text-align: right;
 }
 .buy-button>button{
   border: 1px solid  #b5a08a;
@@ -254,6 +258,7 @@ p{
   background: #b5a08a;
   color: #fff;
 }
+
 
 
 /* ===furnitur-buy=== */
