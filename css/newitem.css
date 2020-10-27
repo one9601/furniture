@@ -30,7 +30,7 @@ p{
   }
   
 .header_area {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -269,11 +269,26 @@ p{
 
 
 @media(max-width:991px){
-  .nav{
+  .header_area .navbar .nav .nav-item{
     background: #fff;
+    border-bottom: 1px solid #ccc;
   }
   .footer-logo{
     padding-bottom: 20px;
   }
-
+  .tab>a:nth-child(2){
+    margin-left: 35%;
+  }
+  .newitem-list{
+    text-align: center;
+  }
+  .newitem-first{
+    margin-left: 0;
+  }
+  .margin-bottom-30{
+    margin-bottom: 0;
+  }
+  .newitem-list{
+    margin-bottom: 20px;
+  }
 }
