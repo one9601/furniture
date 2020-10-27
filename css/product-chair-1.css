@@ -186,14 +186,17 @@ p{
   font-size: 16px;
 }
 
-.furnitur-article>p{
+.furnitur-article td{
   padding: 7px 0;
   color: #757575;
+  font-size: 14px;
 }
-.furnitur-article>p:nth-child(4){
+.price-area>td{
   color: #181818;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 16px;
 }
+
 .item-title{
   font-size: 14px;
   margin-bottom: 10px;
@@ -205,11 +208,11 @@ p{
   font-size: 16px;
 }
 #select{
-  width:74%;
+  width:81%;
   padding: 3px 0;
 }
 #select-2{
-  width: 74%;
+  width: 81%;
   padding: 3px 0;
 }
 .select>div{
@@ -217,7 +220,7 @@ p{
   display: flex;
 }
 .select>div>p{
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 #count{
@@ -296,5 +299,16 @@ p{
     padding: 20px;
     border: 1px solid #888;
     width: 30%; /*Could be more or less, depending on screen size*/
+}
+.close-btn{
+  cursor: pointer;
+  background: #ddd;
+  text-align: center;
+  padding: 10px 0;
+  transition: 0.3s;
+}
+.close-btn:hover{
+  background: #555;
+  color: #fff;
 }
   /* modal */
