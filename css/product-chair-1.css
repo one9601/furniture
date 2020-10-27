@@ -171,7 +171,12 @@ p{
 
 
 /* ====header==== */
-
+.pc-img{
+  display: block;
+}
+.mobile-img{
+  display: none;
+}
 .furniture-buy{
   padding: 100px 0 20px 0;
 }
@@ -183,19 +188,22 @@ p{
 .title{
   font-size: 15px;
   color: #757575;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .furnitur-article{
   margin-left: 50px;
   font-size: 16px;
 }
-
+.first-td{
+  width: 40%;
+}
 .furnitur-article td{
   padding: 7px 0;
   color: #757575;
   font-size: 14px;
 }
+
 .price-area>td{
   color: #181818;
   font-weight: 600;
@@ -317,3 +325,36 @@ p{
   color: #fff;
 }
   /* modal */
+
+
+@media(max-width:1200px){
+  .furniture-img img{
+    width: 100%;
+  }
+}
+@media(max-width:992px){
+  .header_area .navbar .nav .nav-item{
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  .pc-img{
+    display: none;
+  }
+  .mobile-img{
+    display: block;
+  }
+  .furniture-img img{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .furniture-buy{
+    padding: 20px 0;
+  }
+
+  .furnitur-article , .select ,.count-price{
+    margin-left: 0;
+  }
+  .furnitur-article{
+    padding-top: 20px;
+  }
+}
