@@ -277,9 +277,12 @@ p{
   }
   .newitem-list ,.newitem-first{
     width: 50%;
+    margin-left: -15px;
+    margin-right: -15px;
   }
   .newitem-first{
     text-align: center;
+    margin-left: -15px;
   }
   .item-img{
     width: 100%;
