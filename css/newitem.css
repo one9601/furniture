@@ -311,3 +311,8 @@ p{
   }
   
 }
+@media(max-width:768px){
+  .tab>a{
+    display: none;
+  }
+}
