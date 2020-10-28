@@ -322,7 +322,6 @@ p{
   .tab>a{
     display: none;
   }
-  
 }
 @media(max-width:600px){
   .newitem-list{
