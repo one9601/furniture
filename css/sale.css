@@ -170,6 +170,14 @@ p{
 
 /* ====header==== */
 
+.pc-banner{
+  display: block;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.mobile-banner{
+  display: none;
+}
 .new-item-area{
   padding-top: 100px;
 }
@@ -267,7 +275,9 @@ p{
 }
 /* ===footer=== */
 
-
+.newitem-list img{
+  width: 100%;
+}
 @media(max-width:991px){
   .navbar .container{
     padding: 0 !important;
@@ -309,5 +319,29 @@ p{
   .newitem-list{
     margin-bottom: 20px;
   }
+  .tab>a{
+    display: none;
+  }
   
+}
+@media(max-width:600px){
+  .newitem-list{
+    margin: 0 0 50px 0;
+  }
+  .newitem-list img{
+    width: 100%;
+  }
+}
+@media(max-width:540px){
+  .pc-banner{
+    display: none;
+  }
+  .mobile-banner{
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .tab>a{
+    display: none;
+  }
 }
