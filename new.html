@@ -76,13 +76,24 @@
             </div>
             <div class="tab">
                 <p>총상품:<span>12</span>개</p>
-                <a class="tablinks">저가</a>
-                <a class="tablinks">고가</a>
-                <a class="tablinks">인기순</a>
-                <a class="tablinks">등록일순</a>
+                <select id="price-select">
+                    <option value="value" class="button">- 전체보기 -</option>
+                    <option value="a">
+                        <div class="button" onclick="filterSelection('-5')">5만원 이하
+                        </div>
+                    </option>
+                    <option value="2020">5만원 이상~ 10만원 이하</option>
+                </select>
+            </div>
+            <div id="myBtnContainer">
+                <div class="button active2" onclick="filterSelection('all')">전체보기</div>
+                <div class="button" onclick="filterSelection('-5')">5만원 이하</div>
+                <div class="button" onclick="filterSelection('5-10')">5~10만원</div>
+                <div class="button" onclick="filterSelection('10-20')">10~20만원</div>
+                <div class="button" onclick="filterSelection('20-')">20만원 이상</div>
             </div>
             <div class="row padding-0 space-between margin-bottom-30 mobile-margin-top-30">
-                <div class="col-lg-3 col-sm-6 newitem-first newitem-list" onclick="newitem_1('one9601.github.io/furniture/product')">
+                <div class="col-lg-3 col-sm-6 newitem-first newitem-list filterDiv -5" onclick="newitem_1('one9601.github.io/furniture/product')">
                     <img src="img/new/newitem-chair-1.png" alt="이미지" class="item-img">
                     <div class="newitem-content-textbox">
                         <p class="item-name">T402GZ 의자</p>
@@ -90,7 +101,7 @@
                         <p class="item-price-through">40,000원</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 newitem-list" onclick="newitem_1('one9601.github.io/furniture/product')">
+                <div class="col-lg-3 col-sm-6 newitem-list filterDiv -5" onclick="newitem_1('one9601.github.io/furniture/product')">
                     <img src="img/new/newitem-chair-2.png" alt="이미지" class="item-img">
                     <div class="newitem-content-textbox">
                         <p class="item-name">노랑 낮은 의자</p>
@@ -98,7 +109,7 @@
                         <p class="item-price-through">30,000원</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 newitem-list" onclick="newitem_1('one9601.github.io/furniture/product')">
+                <div class="col-lg-3 col-sm-6 newitem-list filterDiv -5" onclick="newitem_1('one9601.github.io/furniture/product')">
                     <img src="img/new/newitem-chair-3.png" alt="이미지" class="item-img">
                     <div class="newitem-content-textbox">
                         <p class="item-name">원목 책상의자</p>
@@ -106,7 +117,7 @@
                         <p class="item-price-through">50,000원</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 newitem-list" onclick="newitem_1('one9601.github.io/furniture/product')">
+                <div class="col-lg-3 col-sm-6 newitem-list filterDiv -5" onclick="newitem_1('one9601.github.io/furniture/product')">
                     <img src="img/new/newitem-chair-4.png" alt="이미지" class="item-img">
                     <div class="newitem-content-textbox">
                         <p class="item-name">차드 라탄 의자 S4AB2</p>
@@ -116,7 +127,7 @@
                 </div>
             </div>
             <div class="row padding-0 space-between margin-bottom-30">
-                <div class="col-lg-3 newitem-first newitem-list col-sm-6" onclick="newitem_1('one9601.github.io/furniture/product')">
+                <div class="col-lg-3 newitem-first newitem-list col-sm-6 filterDiv 10-20" onclick="newitem_1('one9601.github.io/furniture/product')">
                     <img src="img/new/newitem-table-1.png" alt="이미지" class="item-img">
                     <div class="newitem-content-textbox">
                         <p class="item-name">4인식탁세트(의자3 식탁1)</p>
@@ -124,7 +135,7 @@
                         <p class="item-price-through">200,000원</p>
                     </div>
                 </div>
-                <div class="col-lg-3 newitem-list col-sm-6" onclick="newitem_1('one9601.github.io/furniture/product')">
+                <div class="col-lg-3 newitem-list col-sm-6 filterDiv 5-10" onclick="newitem_1('one9601.github.io/furniture/product')">
                     <img src="img/new/newitem-table-2.png" alt="이미지" class="item-img">
                     <div class="newitem-content-textbox">
                         <p class="item-name">1인용 화이트 책상</p>
@@ -132,7 +143,7 @@
                         <p class="item-price-through">90,000원</p>
                     </div>
                 </div>
-                <div class="col-lg-3 newitem-list col-sm-6" onclick="newitem_1('one9601.github.io/furniture/product')">
+                <div class="col-lg-3 newitem-list col-sm-6 filterDiv 10-20 5-10" onclick="newitem_1('one9601.github.io/furniture/product')">
                     <img src="img/new/newitem-table-3.png" alt="이미지" class="item-img">
                     <div class="newitem-content-textbox">
                         <p class="item-name">6인 원목 식탁</p>
@@ -140,7 +151,7 @@
                         <p class="item-price-through">120,000원</p>
                     </div>
                 </div>
-                <div class="col-lg-3 newitem-list col-sm-6" onclick="newitem_1('one9601.github.io/furniture/product')">
+                <div class="col-lg-3 newitem-list col-sm-6 filterDiv 10-20" onclick="newitem_1('one9601.github.io/furniture/product')">
                     <img src="img/new/newitem-table-4.png" alt="이미지" class="item-img">
                     <div class="newitem-content-textbox">
                         <p class="item-name">조립식 화이트 게이밍 책상</p>
@@ -150,7 +161,7 @@
                 </div>
             </div>
             <div class="row padding-0 space-between margin-bottom-30" onclick="newitem_1('one9601.github.io/furniture/product')">
-                <div class="col-lg-3 newitem-first col-sm-6">
+                <div class="col-lg-3 newitem-first col-sm-6 filterDiv 20-">
                     <img src="img/new/newitem-bed-1.png" alt="테이블 이미지" class="item-img">
                     <div class="newitem-content-textbox">
                         <p class="item-name">마켓씨 3서랍수납형 침대</p>
@@ -158,7 +169,7 @@
                         <p class="item-price-through">300,000원</p>
                     </div>
                 </div>
-                <div class="col-lg-3 newitem-list col-sm-6" onclick="newitem_1('one9601.github.io/furniture/product')">
+                <div class="col-lg-3 newitem-list col-sm-6 filterDiv 10-20" onclick="newitem_1('one9601.github.io/furniture/product')">
                     <img src="img/new/newitem-bed-2.png" alt="테이블 이미지" class="item-img">
                     <div class="newitem-content-textbox">
                         <p class="item-name">원목 2인용 침대(매트포함)</p>
@@ -166,7 +177,7 @@
                         <p class="item-price-through">150,000원</p>
                     </div>
                 </div>
-                <div class="col-lg-3 newitem-list col-sm-6" onclick="newitem_1('one9601.github.io/furniture/product')">
+                <div class="col-lg-3 newitem-list col-sm-6 filterDiv 10-20" onclick="newitem_1('one9601.github.io/furniture/product')">
                     <img src="img/new/newitem-bed-3.png" alt="테이블 이미지" class="item-img">
                     <div class="newitem-content-textbox">
                         <p class="item-name">안전 칸막이 침대</p>
@@ -174,7 +185,7 @@
                         <p class="item-price-through">150,000원</p>
                     </div>
                 </div>
-                <div class="col-lg-3 newitem-list col-sm-6" onclick="newitem_1('one9601.github.io/furniture/product')">
+                <div class="col-lg-3 newitem-list col-sm-6 filterDiv 20-" onclick="newitem_1('one9601.github.io/furniture/product')">
                     <img src="img/new/newitem-bed-4.png" alt="테이블 이미지" class="item-img">
                     <div class="newitem-content-textbox">
                         <p class="item-name">화이트 벙커 책상 2층침대</p>
@@ -218,6 +229,7 @@
 
     <!--================Footer Menu Area =================-->
 
+    <script src="js/price.js"></script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/popper.js"></script>
