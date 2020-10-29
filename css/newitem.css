@@ -225,9 +225,9 @@ body{
 
 /* filter start */
 
-
 .filterDiv {
-  /* color: #ffffff; */
+  color: #ffffff;
+
   display: none;
 }
 
@@ -235,19 +235,18 @@ body{
   display: block;
 }
 
-#myBtnContainer{
-  margin-bottom: 30px;
-  display: flex;
+.container {
+  margin-top: 20px;
+  overflow: hidden;
 }
 
 /* Style the buttons */
 .button {
   border: none;
   outline: none;
-  /* padding: 12px 16px;
-  background-color: #f1f1f1; */
+  padding: 12px 16px;
+  background-color: #f1f1f1;
   cursor: pointer;
-  padding: 10px;
 }
 
 .button:hover {
@@ -259,12 +258,13 @@ body{
   color: white;
 }
 
+
 /* filter end */
 
 /* drop down start */
 .dropbtn {
-  padding: 16px;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 36px;
   border: none;
   cursor: pointer;
 }
@@ -343,8 +343,12 @@ body{
 .newitem-list{
   cursor: pointer;
 }
+
 /* ===footer=== */
 
+.newitem-first-list>img{
+  width: 100%;
+}
 
 
 @media(max-width:991px){

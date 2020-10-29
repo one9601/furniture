@@ -1,3 +1,4 @@
+
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
@@ -35,8 +36,16 @@ var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("button");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active2");
-    current[0].className = current[0].className.replace(" active2", "");
-    this.className += " active2";
+
   });
 }
+
+$(document).ready(function () {
+  $(".button").each(function () {
+      $(this).click(function () {
+          $(this).addClass("active2");                      //클릭된 부분을 상단에 정의된 CCS인 selected클래스로 적용
+          $(this).siblings().removeClass("active2");  //siblings:형제요소들,    removeClass:선택된 클래스의 특성을 없앰
+      });
+  });
+});
+

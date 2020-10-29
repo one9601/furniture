@@ -80,15 +80,17 @@
                 <div class="dropdown">
                     <div onclick="dropdown()" class="dropbtn">가격별로 보기</div>
                     <div id="myDropdown" class="dropdown-content">
-                        <div class="button active2" onclick="filterSelection('all')">전체보기</div>
-                        <div class="button" onclick="filterSelection('-5')">5만원 이하</div>
-                        <div class="button" onclick="filterSelection('5-10')">5~10만원</div>
-                        <div class="button" onclick="filterSelection('10-20')">10~20만원</div>
-                        <div class="button" onclick="filterSelection('20-')">20만원 이상</div>
+                        <div id="myBtnContainer">
+                            <div class="button active2" onclick="filterSelection('all')">전체보기</div>
+                            <div class="button" onclick="filterSelection('-5')">5만원 이하</div>
+                            <div class="button" onclick="filterSelection('5-10')">5~10만원</div>
+                            <div class="button" onclick="filterSelection('10-20')">10~20만원</div>
+                            <div class="button" onclick="filterSelection('20-')">20만원 이상</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row padding-0 space-between margin-bottom-30 mobile-margin-top-30">
+            <div class="row padding-0 margin-bottom-30 mobile-margin-top-30">
                 <div class="col-lg-3 col-sm-6 newitem-first newitem-list filterDiv -5" onclick="newitem_1('one9601.github.io/furniture/product')">
                     <img src="img/new/newitem-chair-1.png" alt="이미지" class="item-img">
                     <div class="newitem-content-textbox">
@@ -122,7 +124,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row padding-0 space-between margin-bottom-30">
+            <div class="row padding-0 margin-bottom-30">
                 <div class="col-lg-3 newitem-first newitem-list col-sm-6 filterDiv 10-20" onclick="newitem_1('one9601.github.io/furniture/product')">
                     <img src="img/new/newitem-table-1.png" alt="이미지" class="item-img">
                     <div class="newitem-content-textbox">
@@ -156,7 +158,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row padding-0 space-between margin-bottom-30" onclick="newitem_1('one9601.github.io/furniture/product')">
+            <div class="row padding-0 margin-bottom-30" onclick="newitem_1('one9601.github.io/furniture/product')">
                 <div class="col-lg-3 newitem-first col-sm-6 filterDiv 20-">
                     <img src="img/new/newitem-bed-1.png" alt="테이블 이미지" class="item-img">
                     <div class="newitem-content-textbox">
