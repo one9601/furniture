@@ -1,0 +1,16 @@
+$function(){
+    $(".all-p").click(function(){
+        $(".all-price").css("display","none");
+        $('.first-price').css("display","none");
+        $('.second-price').css("display","none");
+        $('third-price').css("display","none");
+        $('fourth-price').css("display","none");
+    });
+    $(".first-p").click(function(){
+        $(".first-price").css("display","block");
+        $('.all-price').css("display","none");
+        $('.second-price').css("display","none");
+        $('third-price').css("display","none");
+        $('fourth-price').css("display","none");
+    });
+}
