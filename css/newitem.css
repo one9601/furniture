@@ -178,9 +178,9 @@ body{
 
 /* ====header==== */
 
-/* .new-item-area{
+.new-item-area{
   padding-top: 100px;
-} */
+}
 .new-item{
   display: flex;
   border-bottom: 1px solid #ccc;
