@@ -188,7 +188,8 @@ button:focus {
               border: none;
               padding: 0px;
               border-radius: 0px;
-              box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.3); } }
+              box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.3);
+            padding-top: 35.5px; } }
           .header_area .navbar .nav .nav-item.submenu ul:before {
             content: "";
             width: 0;
@@ -462,7 +463,7 @@ button:focus {
         background: #faba00;
         border-color: #faba00;
         color: #fff; } */
-  .o_blog_item .blog_text h4 {
+  .blog_text h4 {
     color: #726e6e;
     font-size: 18px;
     margin: 10px 0 5px 0;
@@ -473,7 +474,7 @@ button:focus {
   }
     /* .o_blog_item .blog_text h4:hover {
       color: #faba00; } */
-  .o_blog_item .blog_text p {
+  .blog_text p {
     max-width: 100px;
     margin-bottom: 30px;
     color: #181818;
@@ -3143,6 +3144,22 @@ a:hover{
 .blog_img, .blog_text>h4 , .blog_text>p{
   cursor: pointer;
 }
+.o_blog_item{
+  width: 355px;
+  height: 355px;
+  overflow: hidden;
+}
+.o_blog_item>.blog_img{
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+.o_blog_item>.blog_img:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transition: all 0.4s ease-in-out;
+}
+
 
 /* ===Footer start=== */
 .footer-text-box{
