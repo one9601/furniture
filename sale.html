@@ -74,10 +74,32 @@
             </div>
             <div class="tab">
                 <p>총상품:<span>12</span>개</p>
-                <a class="tablinks">저가</a>
-                <a class="tablinks">고가</a>
-                <a class="tablinks">인기순</a>
-                <a class="tablinks">등록일순</a>
+            </div>
+            <div class="dropdown2">
+                <div onclick="dropdown2()" class="dropbtn all-price" style="font-weight: bold;">
+                    전체보기
+                </div>
+                <div onclick="dropdown2()" class="dropbtn first-price">
+                    5만원 이하
+                </div>
+                <div onclick="dropdown2()" class="dropbtn second-price">
+                    5~10만원
+                </div>
+                <div onclick="dropdown2()" class="dropbtn third-price">
+                    10~20만원
+                </div>
+                <div onclick="dropdown2()" class="dropbtn fourth-price">
+                    20만원 이상
+                </div>
+                 <div id="myDropdown" class="dropdown2-content">
+                    <div id="myBtnContainer">
+                        <div class="button active2 all-p" onclick="filterSelection('all')">전체보기</div>
+                        <div class="button first-p" onclick="filterSelection('-5')">5만원 이하</div>
+                        <div class="button second-p" onclick="filterSelection('5-10')">5~10만원</div>
+                         <div class="button third-p" onclick="filterSelection('10-20')">10~20만원</div>
+                         <div class="button fourth-p" onclick="filterSelection('20-')">20만원 이상</div>
+                        </div>
+                </div>
             </div>
             <div class="row">
                 <img src="img/sale-banner-pc-bg.png" alt="이미지" class="pc-banner">
@@ -195,7 +217,8 @@
             document.location.href= "https://one9601.github.io/furniture/product";
         }
     </script>
-
+    <script src="js/tab-dropdown.js"></script>
+    <script src="js/dropbtn.js"></script>
     <!-- new-item-area-tab -->
 
     <footer class="footer_area footer-padding">

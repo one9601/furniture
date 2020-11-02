@@ -64,10 +64,15 @@ $(".third-p").click(function(){
 });
 $(".fourth-p").click(function(){
     $(".fourth-price").css("display","block");
+    $(".fourth-price").css("font-weight","bold");
     $(".all-price").css("display","none");
+    $(".all-price").css("font-weight","400");
     $(".second-price").css("display","none");
-    $(".first-price").css("display","none")
-    $(".fourth-price").css("display","none");
+    $(".second-price").css("font-weight","400");
+    $(".first-price").css("display","none");
+    $(".first-price").css("font-weight","400");
+    $(".third-price").css("display","none");
+    $(".third-price").css("font-weight","400");
 });
 
 
