@@ -41,36 +41,36 @@
 .newslide-textbox{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 17%;
+    transform: translate(0, -50%);
 }
 
 .newslide-1-textbox p{
-    font-size: 50px;
-    color: #fff;
+    font-size: 44px;
+    line-height: 130%;
+}
+.newslide-1-textbox p>span{
+    font-size: 44px;
     font-weight: bold;
-    text-align: center;
     line-height: 130%;
 }
 .newslide-1-textbox p:last-child{
     padding-top: 20px;
-    font-size: 18px;
-    color: #fff;
-    text-align: center;
+    font-size: 22px;
     font-weight: 400;
+    color: #888;
 }
-.newslide-2-textbox p{
-    color: #fff;
-    text-align: center;
-}
+
 .newslide-2-textbox p:first-child{
-    font-size: 18px;
+    font-size: 44px;
     padding-bottom: 20px;
-}
-.newslide-2-textbox p:last-child{
-    font-size: 50px;
     font-weight: bold;
     line-height: 130%;
+}
+.newslide-2-textbox p:last-child{
+    font-size: 22px;
+    line-height: 130%;
+    color: #888;
 }
 .newslide-2-textbox>p>span{
     font-size: 50px;
