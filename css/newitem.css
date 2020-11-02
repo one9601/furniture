@@ -424,6 +424,9 @@ body{
   
 }
 @media(max-width:768px){
+  .padding-area{
+    padding: 0;
+  }
   .tab{
     width: 94%;
     margin: 0 auto;
