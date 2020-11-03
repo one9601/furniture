@@ -10,7 +10,6 @@
 .padding-0{
   padding: 0;
 }
-
 .row{
   margin: 0;
 }
@@ -32,12 +31,10 @@ body{
     height: 100px;
     background: #fff;
     border-bottom: 1px solid #ccc;
-
   }
   .logo_img img{
     width:200px;
   }
-  
 .header_area {
     position: fixed;
     width: 100%;
@@ -181,6 +178,34 @@ body{
 
 /* ====header==== */
 
+.banner-area{
+  position: relative;
+}
+.banner-textarea{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.banner-textarea>p:first-child{
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.banner-textarea>p:last-child{
+  font-size: 34px;
+}
+.banner-textarea>p>span{
+  font-weight: bold;
+}
+.overlay-wihte{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255,0.4);
+}
+/* ===banner-arae=== */
 /* .new-item-area{
   padding-top: 100px;
 } */
