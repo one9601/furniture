@@ -24,7 +24,8 @@
         <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
         <!-- main css -->
         <link rel="stylesheet" href="css/contact.css">
-		<link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        
     
 </head>
 <body>
@@ -75,7 +76,19 @@
             </div>
         </div>
     </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="map" style="width:500px;height:400px;"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=2be379809e8d8686fbb9364ab4a57666"></script>
 
+	
+    
+
+    <!-- ==========================kakao map======================== -->
     <footer class="footer_area footer-padding">
         <div class="container">
             <div class="row">
@@ -112,6 +125,15 @@
         <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/mail-script.js"></script>
-
+        <script>
+            var container = document.getElementById('map');
+            var options = {
+                center: new kakao.maps.LatLng(33.450701, 126.570667),
+                level: 3
+            };
+    
+            var map = new kakao.maps.Map(container, options);
+        </script>
+        
 </body>
 </html>
