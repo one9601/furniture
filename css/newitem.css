@@ -473,6 +473,11 @@ body{
     display: none;
   }
 }
+@media(max-width:600px){
+  .dropbtn{
+    width: 200px;
+  }
+}
 @media(max-width:540px){
   .header_area .navbar .navbar-brand img + img{
     width: 150px;
@@ -498,11 +503,7 @@ body{
   }
   .new-item>.new-item-num ,.dropbtn{
     line-height: inherit;
-  }
-  .dropbtn{
-    width: 100px;
-  }
-
+  } 
   .dropbtn{
     font-size: 16px;
   }
