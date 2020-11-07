@@ -473,11 +473,7 @@ body{
     display: none;
   }
 }
-@media(max-width:600px){
-  .dropbtn{
-    width: 200px;
-  }
-}
+
 @media(max-width:540px){
   .header_area .navbar .navbar-brand img + img{
     width: 150px;
@@ -520,6 +516,11 @@ body{
     font-size: 12px;
   }
   .footer-logo img{
+    width: 150px;
+  }
+}
+@media(max-width:450px){
+  .dropbtn{
     width: 150px;
   }
 }
