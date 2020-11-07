@@ -267,7 +267,18 @@ p{
   color: #fff;
 }
 
-
+#floatMenu {
+	width: 200px;
+	height: 200px;
+	background-color: #606060;
+  color: #fff;
+}
+#floatMenu.activated{
+  position: fixed;
+  top: 0;
+  left: 57%;
+}
+/* detail end */
 
 /* ===furnitur-buy=== */
 

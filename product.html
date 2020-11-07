@@ -24,7 +24,9 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/product-chair-1.css">
         <link rel="stylesheet" href="css/responsive.css">
-        <!-- script -->
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <!--================Header Menu Area =================-->
@@ -72,17 +74,16 @@
 <section class="furniture-buy">
     <div class="container">
         <div class="title">
-            가구 > 의자 > 원목 고급 식탁책상 의자
+            가구 > 침대 > 무브 소프트 세미 극세사 차렵이불
         </div>
         <div class="row">
             <div class="col-lg-6 padding-0 furniture-img">
-                <img src="img/item/item-img-1.png" alt="이미지" class="pc-img">
-                <img src="img/item/item-img-mobile.png" alt="이미지" class="mobile-img">
+                <img src="img/detail-img-1.jpg" alt="이미지">
             </div>
             <div class="col-lg-6 furniture-buy-article padding-0">
                 <div class="furnitur-article">
                     <p class="item-title">
-                        원목 고급 식탁책상 의자
+                        무브 소프트 세미 극세사 차렵이불
                     </p>
                     <table class="product-table">
                         <tr>
@@ -123,7 +124,7 @@
                         <select id="select">
                             <option value="value">- [필수] 제품 선택 -</option>
                             <option value="a">-----------</option>
-                            <option value="2020">원목 고급 식탁책상 의자</option>
+                            <option value="2020">무브 소프트 세미 극세사 차렵이불</option>
                         </select>
                     </div>
                     <div class="select-second">
@@ -137,7 +138,7 @@
                 </div>
                 <div class="count-price">
                     <div id="input_div">
-                        <span class="count-title">원목 고급 식탁책상 의자 당일배송</span>
+                        <span class="count-title">무브 소프트 세미 극세사 차렵이불 당일배송</span>
                         수량 : 
 
                           <input type="text" size="25" value="1" id="count">
@@ -158,7 +159,84 @@
         </div>
     </div>
 </section>
+<section class="product-detail">
+    <div class="container detail-product">
+        <div class="row detail-row" style="height: 5000px;">
+            <div class="col-md-7">
+                <!-- Swiper -->
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/slide/review-img-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/slide/review-img-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/slide/review-img-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/slide/review-img-4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/slide/review-img-5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/slide/review-img-6.jpg" alt=""></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/slide/review-bottom-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/slide/review-bottom-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/slide/review-bottom-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/slide/review-bottom-4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/slide/review-bottom-5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/slide/review-bottom-6.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div id="floatMenu">
+                    플로팅 메뉴
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<script>
+         $(function(){
+            $(window).scroll(function(){
+            var navbar = $(this).scrollTop();
+            console.log(navbar);
+            var $header = $('#floatMenu');
+            if(navbar > 700){
+                $header.addClass('activated');
+            }else{
+                $header.removeClass('activated');
+            }
+          })
+        })
+</script>
+
+
+<!-- Initialize Swiper -->
+<script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      loop: true,
+      freeMode: true,
+      loopedSlides: 5, //looped slides should be the same
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      loop: true,
+      loopedSlides: 5, //looped slides should be the same
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs,
+      },
+    });
+  </script>
     <footer class="footer_area footer-padding">
         <div class="container">
             <div class="row">
@@ -183,7 +261,6 @@
 
     <!--================Header Menu Area =================-->
 
-
 <div id="myModal" class="modal">
             <div class="modal-content">
                 <p style="text-align: center;">
@@ -195,7 +272,6 @@
                     <span class="pop_bt" style="font-size: 13pt;">닫기</span></p>
             </div>
         </div>
-
 
 
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
