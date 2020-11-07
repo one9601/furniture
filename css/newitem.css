@@ -178,9 +178,8 @@ body{
 
 /* ====header==== */
 
-.banner-area{
-  position: relative;
-}
+
+
 .banner-textarea{
   position: absolute;
   top: 50%;
@@ -407,6 +406,14 @@ body{
 }
 
 
+@media(max-width:1000px){
+  .banner-textarea>p:first-child{
+    font-size: 33px;
+  }
+  .banner-textarea>p:last-child{
+    font-size: 22px;
+  }
+}
 @media(max-width:992px){
   /* .newitem-list{
     padding: 0 3%;
@@ -452,6 +459,9 @@ body{
   .padding-area{
     padding: 0;
   }
+  .banner-textarea{
+    top: 60%;
+  }
   .tab{
     width: 94%;
     margin: 0 auto;
@@ -466,6 +476,15 @@ body{
 @media(max-width:540px){
   .header_area .navbar .navbar-brand img + img{
     width: 150px;
+  }
+  .banner-textarea>p:first-child{
+    font-size:22px;
+  }
+  .banner-textarea>p:last-child{
+    font-size: 16px;
+  }
+  .banner-area{
+    height: 200px !important;
   }
   .container{
     width: 95%;
