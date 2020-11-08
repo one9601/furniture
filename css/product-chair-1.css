@@ -488,6 +488,33 @@ p{
   .furniture-img img{
     width: 100%;
   }
+  #floatMenu{
+    display: none;
+  }
+  .floatMenu2.activated2{
+    display: block;
+  }
+  .swiper-container{
+    width: 100%;
+  }
+  .swiper-container img{
+    width: 100%;
+  }
+  .detail-row{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+  .detail-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: inherit;
+  }
+  .detail{
+    width: 100%;
+  }
+
 }
 @media(max-width:992px){
   .header_area .navbar .nav .nav-item{
@@ -517,24 +544,11 @@ p{
   .footer-text-box{
     padding-top: 20px;
   }
-  #floatMenu{
-    display: none;
-  }
-  .floatMenu2.activated2{
-    display: block;
-  }
+
 
 }
 @media(max-width:768px){
-  .swiper-container{
-    width: 100%;
-  }
-  .swiper-container img{
-    width: 100%;
-  }
-  .detail{
-    width: 100%;
-  }
+
   .gallery-thumbs img{
     height: auto;
   }
@@ -545,5 +559,8 @@ p{
   }
   #select-2{
     width: auto;
+  }
+  .container{
+    padding: 0 20px;
   }
 }
