@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
 body{
   font-family: 'Nanum Gothic', sans-serif;
 }
@@ -447,7 +448,42 @@ p{
 }
   /* modal */
 
-
+.detail{
+  display: flex;
+  flex-direction: column;
+}
+.detail-bottom{
+  max-width: 720px;
+}
+.swiper-container{
+  max-width: 720px;
+}
+.floatMenu2{
+  position: fixed;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  z-index: 99999999999;
+  animation: arrow 2s 1s infinite;
+  display: none;
+}
+.floatMenu2 i{
+  font-size: 25px;
+  background: #947b62;
+  color: #fff;
+  padding: 5px;
+}
+@keyframes arrow{
+  0%{
+    top: 88%;
+  }
+  50%{
+    top: 92%
+  }
+  100%{
+    top: 88%;
+  }
+}
 @media(max-width:1200px){
   .furniture-img img{
     width: 100%;
@@ -480,6 +516,27 @@ p{
   }
   .footer-text-box{
     padding-top: 20px;
+  }
+  #floatMenu{
+    display: none;
+  }
+  .floatMenu2.activated2{
+    display: block;
+  }
+
+}
+@media(max-width:768px){
+  .swiper-container{
+    width: 100%;
+  }
+  .swiper-container img{
+    width: 100%;
+  }
+  .detail{
+    width: 100%;
+  }
+  .gallery-thumbs img{
+    height: auto;
   }
 }
 @media(max-width:600px){

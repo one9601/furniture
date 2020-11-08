@@ -28,6 +28,8 @@
         <!-- swiper -->
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- fontawsome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
     <!--================Header Menu Area =================-->
@@ -169,7 +171,7 @@
             <p>유저들의 스타일링 샷</p>
         </div>
         <div class="row detail-row">
-            <div class="col-md-8 padding-0" id="detail-slide">
+            <div class="padding-0 detail" id="detail-slide">
                 <!-- Swiper -->
                 <div class="swiper-container gallery-top">
                     <div class="swiper-wrapper">
@@ -193,7 +195,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 padding-0">
+            <div class="padding-0">
                 <div id="floatMenu">
                     <form id="form1" name="form1" method="post" action="" class="option-all">
                         <select name="option_detail[]" id="option_detail[]" class="option-top">
@@ -213,10 +215,11 @@
                         </button>
                     </div>
                 </div>
+
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="detail-bottom">
                 <img src="images/detail/detail-2.png" alt="" style="width: 100%;">
             </div>
         </div>
@@ -244,6 +247,19 @@
                 $header.addClass('activated');
             }else{
                 $header.removeClass('activated');
+            }
+          })
+        })
+
+        $(function(){
+            $(window).scroll(function(){
+            var navbar = $(this).scrollTop();
+            console.log(navbar);
+            var $header = $('.floatMenu2');
+            if(navbar > 700){
+                $header.addClass('activated2');
+            }else{
+                $header.removeClass('activated2');
             }
           })
         })
@@ -310,7 +326,11 @@
             </div>
         </div>
 
-
+        <div class="floatMenu2">
+            <a href="#">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
 
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
             <script src="js/jquery-3.2.1.min.js"></script>
