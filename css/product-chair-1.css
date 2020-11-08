@@ -342,6 +342,7 @@ p{
 .buy-button-bottom button:hover{
   background: #947b62;
 }
+
 #myModal2{
   position: fixed;
   top: 50%;
@@ -433,7 +434,9 @@ p{
     margin: 15% auto; /*15% from the top and centered*/
     padding: 20px;
     border: 1px solid #888;
-    width: 30%; /*Could be more or less, depending on screen size*/
+    width: 70%;
+    max-width: 500px;
+     /*Could be more or less, depending on screen size*/
 }
 .close-btn{
   cursor: pointer;
@@ -484,6 +487,7 @@ p{
     top: 88%;
   }
 }
+
 @media(max-width:1200px){
   .furniture-img img{
     width: 100%;
@@ -521,11 +525,15 @@ p{
     background: #fff;
     border-bottom: 1px solid #ccc;
   }
-  .pc-img{
-    display: none;
+  .select>div{
+    flex-direction: column;
+    padding: 0;
   }
-  .mobile-img{
-    display: block;
+  #select, #select-2{
+    margin: 7px 0;
+  }
+  #input_div{
+    margin: 3px 0;
   }
   .furniture-img img{
     width: 100%;
@@ -534,9 +542,17 @@ p{
   .furniture-buy{
     padding: 20px 0;
   }
-
+  .buy-button{
+    margin: 7px 0 0 0;
+  }
   .furnitur-article , .select ,.count-price{
     margin-left: 0;
+  }
+  .count-price{
+    margin: 0 0 3px 0;
+  }
+  .furniture-buy{
+    padding-bottom: 7px;
   }
   .furnitur-article{
     padding-top: 20px;
@@ -562,5 +578,18 @@ p{
   }
   .container{
     padding: 0 20px;
+  }
+
+}
+@media(max-width:540px){
+  #count , #moins, #plus{
+    width: 25%;
+    margin-top: 7px;
+  }
+}
+
+@media(max-width:368px){
+  #count{
+    margin-left: 5px;
   }
 }
