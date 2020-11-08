@@ -4,6 +4,9 @@
 body{
   font-family: 'Nanum Gothic', sans-serif;
 }
+.container{
+  padding: 0;
+}
 .padding-0{
   padding: 0;
 }
@@ -86,7 +89,10 @@ p{
                 border: none;
                 padding: 0px;
                 border-radius: 0px;
-                box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.3); } }
+                box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.3);
+                padding-top: 22px;
+                margin-top: 22px;
+              } }
             .header_area .navbar .nav .nav-item.submenu ul:before {
               content: "";
               width: 0;
@@ -267,17 +273,115 @@ p{
   color: #fff;
 }
 
+/* top */
+
+.detail-tab{
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.detail-slide{
+  font-size: 18px;
+}
+.detail-first-title{
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+/* detail */
+
+
 #floatMenu {
-	width: 200px;
-	height: 200px;
-	background-color: #606060;
-  color: #fff;
+  width: 100%;
+	max-width: 350px;
+  height: 100%;
+  margin-left: 50px;
 }
 #floatMenu.activated{
   position: fixed;
   top: 0;
-  left: 57%;
+  left: 60.5%;
 }
+.option-top{
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+.option-bottom{
+  display: flex;
+}
+.option-bottom p{
+  font-size: 16px;
+  font-weight: bold;
+}
+.option-bottom input{
+  font-size: 16px;
+  font-weight: bold;
+  width: 80px;
+  border: none;
+}
+.startprice-p{
+  padding-right: 45%;
+}
+.buy-button-bottom button{
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background: #b5a08a;
+  padding: 20px 50px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.4s;
+  margin-top: 20px;
+}
+.buy-button-bottom button:hover{
+  background: #947b62;
+}
+#myModal2{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999999;
+  width: 50%;
+  height: auto;
+  background: #fff;
+  display: none;
+}
+.modal-content2>p:first-child{
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.modal2-line{
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  margin-bottom: 20px;
+}
+.modal-content2>p:nth-child(3){
+  font-size: 18px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.close-btn2{
+  background: #ccc;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.4s;
+  padding: 20px 0;
+}
+.close-btn2:hover{
+  background: #888;
+  color: #fff;
+}
+
 /* detail end */
 
 /* ===furnitur-buy=== */
@@ -297,6 +401,12 @@ p{
   }
   .footer-padding{
     padding: 30px 0;
+  }
+
+  .gallery-thumbs img{
+    width: 100%;
+    height: 140px;
+    padding-top: 10px;
   }
 
   /* ===footer=== */

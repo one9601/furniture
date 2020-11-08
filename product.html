@@ -24,6 +24,7 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/product-chair-1.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/reset.css">
         <!-- swiper -->
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -160,18 +161,23 @@
     </div>
 </section>
 <section class="product-detail">
-    <div class="container detail-product">
-        <div class="row detail-row" style="height: 5000px;">
-            <div class="col-md-7">
+    <div class="container detail-product padding-0">
+        <div class="detail-tab">
+            <a href="#detail-slide" class="detail-slide">상품정보</a>
+        </div>
+        <div class="detail-first-title">
+            <p>유저들의 스타일링 샷</p>
+        </div>
+        <div class="row detail-row">
+            <div class="col-md-8 padding-0" id="detail-slide">
                 <!-- Swiper -->
                 <div class="swiper-container gallery-top">
                     <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/slide/review-img-1.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/slide/review-img-2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/slide/review-img-3.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/slide/review-img-4.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/slide/review-img-5.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/slide/review-img-6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/detail/review-img-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/detail/review-img-2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/detail/review-img-3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/detail/review-img-4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/detail/review-img-5.png" alt=""></div>
                     </div>
                     <!-- Add Arrows -->
                     <div class="swiper-button-next swiper-button-white"></div>
@@ -179,24 +185,55 @@
                 </div>
                 <div class="swiper-container gallery-thumbs">
                     <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/slide/review-bottom-1.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/slide/review-bottom-2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/slide/review-bottom-3.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/slide/review-bottom-4.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/slide/review-bottom-5.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/slide/review-bottom-6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/detail/review-img-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/detail/review-img-2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/detail/review-img-3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/detail/review-img-4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/detail/review-img-5.png" alt=""></div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-4 padding-0">
                 <div id="floatMenu">
-                    플로팅 메뉴
+                    <form id="form1" name="form1" method="post" action="" class="option-all">
+                        <select name="option_detail[]" id="option_detail[]" class="option-top">
+                          <option value="">상품을 선택하세요.</option> <!--선택안함일때 value=""-->
+                          <option value="이름1|옵션1|0">----------</option>
+                          <option value="이름2|옵션2|150000">무브 소프트 세미 극세사 차렵이불</option>
+                        </select>
+                        <div class="option-bottom">
+                            <p class="startprice-p">주문금액 </p>
+                            <input type="text" name="price" id="price" value="0" class="bottom-result"/>
+                            <p class="endprice-p">원</p>
+                        </div>
+                    </form>
+                    <div class="buy-button-bottom">
+                        <button id="modal-btn-bottom">
+                            <p>구매하기</p>
+                        </button>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <img src="images/detail/detail-2.png" alt="" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+    <!-- bottom-modal -->
+    <div id="myModal2" class="modal2">
+        <div class="modal-content2">
+            <p>구매하기</p>
+            <div class="modal2-line"></div>
+            <p>본 사이트는 포트폴리오 사이트 입니다.</p>
+            <div class="close-btn2" onclick="close_pop2();">
+                <p>닫기</p>
             </div>
         </div>
     </div>
 </section>
-
+<script src="js/product.js"></script>
 <script>
          $(function(){
             $(window).scroll(function(){
@@ -272,6 +309,7 @@
                     <span class="pop_bt" style="font-size: 13pt;">닫기</span></p>
             </div>
         </div>
+
 
 
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
