@@ -144,8 +144,8 @@
                         <span class="count-title">무브 소프트 세미 극세사 차렵이불 당일배송</span>
                         수량 : 
                           <input type="text" size="25" value="1" id="count">
-                          <input type="button" value="-" id="moins" onclick="minus()">
-                          <input type="button" value="+" id="plus" onclick="plus()">
+                          <input type="button" value="-" id="moins" onclick="minus()" class="minus-btn updown-btn">
+                          <input type="button" value="+" id="plus" onclick="plus()" class="plus-btn updown-btn">
                     </div>
                       가격 : <input type="text" value="150000" id="total_count" hidden=hidden />
                       <input type="text" value="150000" id="total_count_view"  />원
@@ -243,7 +243,7 @@
             var navbar = $(this).scrollTop();
             console.log(navbar);
             var $header = $('#floatMenu');
-            if(navbar > 700){
+            if(navbar > 850){
                 $header.addClass('activated');
             }else{
                 $header.removeClass('activated');
@@ -256,7 +256,7 @@
             var navbar = $(this).scrollTop();
             console.log(navbar);
             var $header = $('.floatMenu2');
-            if(navbar > 700){
+            if(navbar > 850){
                 $header.addClass('activated2');
             }else{
                 $header.removeClass('activated2');
