@@ -25,6 +25,8 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <!-- fontawsome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         
     
 </head>
@@ -76,14 +78,66 @@
             </div>
         </div>
     </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div id="map" style="width:500px;height:400px;"></div>
+    <div class="container padding-0">
+        <div class="row padding-0">
+            <div class="col-sm-12 padding-0">
+                <div id="map" style="width:100%;height:400px;"></div>
+            </div>
+        </div>
+        <div class="row padding-0 map-article-box">
+            <div class="col-sm-6 map-address padding-0">
+                <div class="map-article-title">
+                    <i class="fas fa-car"></i>
+                    <p>주소 및 연락처</p>
+                </div>
+                <div class="map-address-article">
+                    <div class="map-article-line">
+                        <p>주소 :</p>
+                        <p>경기 김포시 사우중로 48 7층</p>
+                    </div>
+                    <div class="map-article-line">
+                        <p>대표전화 :</p>
+                        <p>010-9350-9601</p>
+                    </div>
+                    <div class="map-article-line">
+                        <p>영업시간 :</p>
+                        <p>AM : 09:30 ~ PM : 18:30(토,일요일 휴무)</p>
+                    </div>
+                    <div class="map-article-line">
+                        <p>점심시간 :</p>
+                        <p>PM : 12:00 ~ PM : 13:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 map-transport-article">
+                <div class="map-article-title map-transport-title">
+                    <i class="fas fa-subway"></i>
+                    <p>지하철로 오시는길</p>
+                </div>
+                <div class="map-address-article">
+                    <p><span class="g-gold">김포골드라인</span></p>
+                    <p>사우역 3번출구 도보 약 3분</p>
+                </div>
+                <div class="map-article-title map-transport-title subway-title">
+                    <i class="fas fa-bus"></i>
+                    <p>버스로 오시는길</p>
+                </div>
+                <div class="map-address-article">
+                    <div class="transport-line">
+                        <p>사우역 김포고</p>
+                        <p class="color-gray">101, 33-1, 81-1, 388, 60, 60-3</p>
+                    </div>
+                    <div class="transport-line">
+                        <p>사우동 행정복지센터</p>
+                        <p class="color-gray">50, 52A, 1, 55(평일), G6001</p>
+                    </div>
+                </div>  
             </div>
         </div>
     </div>
     <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=2be379809e8d8686fbb9364ab4a57666"></script>
+
+    
 
 	
     
@@ -126,13 +180,35 @@
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/mail-script.js"></script>
         <script>
-            var container = document.getElementById('map');
-            var options = {
-                center: new kakao.maps.LatLng(33.450701, 126.570667),
-                level: 3
-            };
+            // var container = document.getElementById('map');
+            // var options = {
+            //     center: new kakao.maps.LatLng(33.450701, 126.570667),
+            //     level: 3
+            // };
     
-            var map = new kakao.maps.Map(container, options);
+            // var map = new kakao.maps.Map(container, options);
+
+            var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.61907584366348, 126.7190601954286), // 지도의 중심좌표
+        level: 4 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(37.61907584366348, 126.7190601954286); 
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+// marker.setMap(null);    
         </script>
         
 </body>

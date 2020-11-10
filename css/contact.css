@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 body{
     font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
 }
 .padding-0{
   padding: 0;
@@ -202,3 +203,62 @@ p{
     cursor: pointer;
   }
   /* ===footer=== */
+
+
+
+  /* map-article */
+  .map-article-box{
+    padding: 50px 0;
+  }
+  
+  .map-address{
+    border-right: 1px solid #ccc;
+  }
+  .map-article-title{
+    display: flex;
+    padding-bottom: 20px;
+  }
+  .map-article-title p{
+    margin-left: 30px;
+    color: #181818;
+    line-height: 38px;
+    font-size: 25px;
+    font-weight: bold;
+
+  }
+  .map-article-title i{
+    font-size: 25px;
+    color: #fff;
+    background: #888;
+    padding: 7px;
+    border-radius: 100%;
+    width: 39px;
+    text-align: center;
+  }
+  .map-address-article p{
+    padding: 3px 0;
+  }
+  .map-article-line{
+    display: flex;
+  }
+  .map-article-line>p:first-child{
+    width: 80px;
+  }
+  .g-gold{
+    color: gold;
+    font-weight: bold;
+  }
+  .subway-title{
+    padding-top: 20px;
+  }
+  .transport-line{
+    display: flex;
+  }
+  .transport-line>p:last-child{
+    color: #999;
+    margin-left: 20px;
+  }
+  .transport-line>p:first-child{
+    width: 140px;
+    font-weight: bold;
+  }
