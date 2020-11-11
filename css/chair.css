@@ -1,8 +1,8 @@
-.banner-area{
+.banner-img{
     position: relative;
     width: 100%;
-    height: 300px;
-    background: url(../img/banner/banner-img-4.png);
+    height: 399px;
+    background: url(../img/banner/chair-banner.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
