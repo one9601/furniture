@@ -1,12 +1,16 @@
-.banner-area{
+/* .banner-img{
     position: relative;
     width: 100%;
-    height: 300px;
-    background: url(../img/banner/banner-img-2.png);
+    height: 399px;
+    background: url(../img/banner/sale-banner.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-  }
+  } */
   /* @media(max-width:540px){
       height: 200px;
   } */
+
+  .banner-img img{
+      width: 100%;
+  }

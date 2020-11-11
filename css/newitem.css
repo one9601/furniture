@@ -495,9 +495,6 @@ body{
   .banner-textarea>p:last-child{
     font-size: 16px;
   }
-  .banner-area{
-    height: 200px !important;
-  }
   .container{
     width: 95%;
     margin: 0 auto;
